@@ -82,11 +82,13 @@ function scss() {
 }
 
 function fonts() {
-  return gulp.src(paths.fonts.src).pipe(gulp.dest(paths.fonts.dest));
+  return gulp.src(paths.fonts.src, { encoding: false }).pipe(gulp.dest(paths.fonts.dest));
 }
 
 function images() {
-  return gulp.src(paths.images.src).pipe(gulp.dest(paths.images.dest));
+  return gulp
+    .src(paths.images.src, { encoding: false })
+    .pipe(gulp.dest(paths.images.dest));
 }
 
 function clean() {
