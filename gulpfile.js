@@ -82,7 +82,9 @@ function scss() {
 }
 
 function fonts() {
-  return gulp.src(paths.fonts.src, { encoding: false }).pipe(gulp.dest(paths.fonts.dest));
+  return gulp
+    .src(paths.fonts.src, { encoding: false })
+    .pipe(gulp.dest(paths.fonts.dest));
 }
 
 function images() {

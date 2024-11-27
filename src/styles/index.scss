@@ -1,8 +1,2 @@
-@import './fonts/fonts.scss';
-
-.page {
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 40px;
-  color: red;
-}
+@use './fonts/fonts';
+@use './global/global';
